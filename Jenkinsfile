@@ -14,7 +14,7 @@ pipeline
     {
         steps
         {
-            sh 'docker run -it -d --name app2 -p 8000:80 nginx'
+            sh 'docker run -it -d --name app3 -p 8000:8000 nginx'
         }
     }
     }
