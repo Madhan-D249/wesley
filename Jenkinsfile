@@ -16,7 +16,7 @@ pipeline
         {
             sh '''
             docker rm -f app3
-            docker run -it -d --name app3 -p 8000:8000 nginx
+            docker run -it -d --name app3 -p 80:80 nginx
             '''
         }
     }
