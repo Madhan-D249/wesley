@@ -1,12 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Web App</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #00c9ff, #92fe9d);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #ffffffcc;
+            padding: 2rem 3rem;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            color: #444;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #00796b;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello maxxy</h1>
-    
+    <div class="container">
+        <h1>This is My First Simple Web Application</h1>
+        <p>
+            I deployed this project using <span class="highlight">Jenkins</span> by pulling source code from 
+            <span class="highlight">GitHub</span> and hosted it on the 
+            <span class="highlight">Tomcat Server</span>.
+        </p>
+        <p>Thank you for visiting!</p>
+    </div>
 </body>
 </html>
