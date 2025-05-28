@@ -44,7 +44,7 @@ pipeline {
 
         stage("Build Docker Image") { 
             steps { 
-                sh 'docker build -t Wesly .' 
+                sh 'docker build -t wesly .' 
             } 
             post { 
                 success { 
@@ -62,7 +62,7 @@ pipeline {
                     sh ''' 
                         echo "$DOCKER_PASS" | docker login -u "$DOCKER_USER" --password-stdin 
                         docker tag Wesly $DOCKER_USER Wesly:latest 
-                        docker push $DOCKER_USER Wesly:latest 
+                        docker push $DOCKER_USER wesly:latest 
                     ''' 
                 } 
             } 
@@ -80,7 +80,7 @@ pipeline {
         stage("Remove Docker Image Locally") { 
             steps { 
                 sh """ 
-                docker rmi -f ${DOCKERHUB_USERNAME} Wesly || true 
+                docker rmi -f ${DOCKERHUB_USERNAME} wesly || true 
                 docker rmi -f Wesly || true 
                 """ 
             } 
@@ -98,7 +98,7 @@ pipeline {
             steps { 
                 sh """ 
                 docker rm -f app || true 
-                docker run -d --name app -p 8081:8080 ${DOCKERHUB_USERNAME} Wesly 
+                docker run -d --name app -p 8081:8080 ${DOCKERHUB_USERNAME} wesly 
                 """ 
             } 
             post { 
