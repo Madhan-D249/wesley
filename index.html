@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sports Car Sales</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212; /* very dark gray/black */
+      color: #e0e0e0; /* light gray text */
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #1c1c1c; /* dark charcoal */
+      padding: 1.5rem 2rem;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #ff2a2a; /* bright red */
+      border-bottom: 3px solid #ff2a2a;
+      box-shadow: 0 3px 10px rgba(255, 42, 42, 0.8);
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    main h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      color: #ff2a2a;
+      text-shadow: 0 0 8px #ff2a2a;
+    }
+
+    main p {
+      font-size: 1.3rem;
+      max-width: 600px;
+      margin-bottom: 2rem;
+      line-height: 1.5;
+      color: #c0c0c0;
+    }
+
+    .car-image {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(255, 42, 42, 0.7);
+      margin-bottom: 2rem;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      border: 2px solid #ff2a2a;
+      background-color: #1c1c1c;
+    }
+
+    .car-image:hover {
+      transform: scale(1.05);
+      box-shadow: 0 12px 30px rgba(255, 42, 42, 1);
+    }
+
+    .button {
+      background-color: #ff2a2a;
+      color: white;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      box-shadow: 0 5px 20px rgba(255, 42, 42, 0.8);
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #cc2222;
+      box-shadow: 0 7px 25px rgba(204, 34, 34, 1);
+    }
+
+    footer {
+      background-color: #1c1c1c;
+      color: #666;
+      text-align: center;
+      padding: 1rem 2rem;
+      font-size: 0.9rem;
+      border-top: 1px solid #333;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    Speedster Sports Cars
+  </header>
+  <main>
+    <h1>The Ultimate Sports Car</h1>
+    <p>
+      Experience breathtaking speed and style with our latest sports car model. 
+      Engineered for performance, designed for thrill.
+    </p>
+    <img
+      class="car-image"
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKLpsTB4ONISSUyJcFGrYeVIN88QHkE-BQxQ&s"
+      alt="Sports Car"
+    />
+    <a href="#" class="button">Buy Now</a>
+  </main>
+  <footer>
+    &copy; 2025 Speedster Sports Cars. All rights reserved.
+  </footer>
+</body>
+</html>
