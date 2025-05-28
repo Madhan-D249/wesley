@@ -98,7 +98,7 @@ pipeline {
             steps { 
                 sh """ 
                 docker rm -f app || true 
-                docker run -d --name app -p 8081:8080 ${DOCKERHUB_USERNAME} wesly
+                docker run -d --name app -p 8081:8080 ${DOCKERHUB_USERNAME}/wesly:latest
                 """ 
             } 
             post { 
