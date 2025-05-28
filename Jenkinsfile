@@ -62,7 +62,7 @@ pipeline {
                     sh ''' 
                         echo "$DOCKER_PASS" | docker login -u "$DOCKER_USER" --password-stdin 
                         docker tag wesly $DOCKER_USER wesly:latest 
-                        docker push $DOCKER_USER wesly:latest 
+                        docker push $DOCKER_USER/wesly:latest 
                     ''' 
                 } 
             } 
