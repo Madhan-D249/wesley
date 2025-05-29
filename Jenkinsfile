@@ -81,7 +81,7 @@ pipeline {
             steps { 
                 sh """ 
                 docker rmi -f ${DOCKERHUB_USERNAME} wesly || true 
-                docker rmi -f Wesly || true 
+                docker rmi -f wesly || true 
                 """ 
             } 
             post { 
